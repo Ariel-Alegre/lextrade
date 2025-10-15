@@ -230,15 +230,18 @@ h6 {
 @media (min-width: 1200px) {
   .navmenu {
     padding: 0;
+      width: 100%;
+
   }
 
-  .navmenu ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style: none;
-    align-items: center;
-  }
+.navmenu ul {
+  margin: 0 auto; /* opcional, ayuda a centrar si el contenedor tiene width definido */
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center; /* <--- esto centra los li */
+}
 
   .navmenu li {
     position: relative;
