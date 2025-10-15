@@ -4186,3 +4186,10 @@ section,
 .logo img {
   max-height: none !important;
 }
+
+@media (max-width: 768px) {
+  .logo-img {
+  height: 60px !important; /* Cambiá el tamaño a gusto */
+  width: auto !important;
+}
+}
