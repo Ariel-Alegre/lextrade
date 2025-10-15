@@ -34,7 +34,7 @@
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #555555; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #a8895f; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color:#a8895f  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -823,6 +823,7 @@ section,
   position: relative;
   overflow: hidden;
   padding-bottom: 119px;
+  background-color: #a8895f;
 }
 
 .hero .hero-content h2 {
@@ -830,7 +831,7 @@ section,
   font-weight: 700;
   margin-bottom: 1.5rem;
   line-height: 1.2;
-  color: var(--heading-color);
+  color: #000;
 }
 
 @media (max-width: 992px) {
@@ -848,7 +849,7 @@ section,
 .hero .hero-content p {
   font-size: 1.1rem;
   margin-bottom: 2rem;
-  color: var(--default-color);
+  color: #000;
 }
 
 .hero .hero-content .hero-btns {
@@ -904,17 +905,18 @@ section,
   }
 }
 
-.hero .hero-content .hero-stats .stat-item h3 {
+.hero .hero-content .hero-stats .stat-item span {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--accent-color);
+  color: #000;
   margin-bottom: 0.5rem;
 }
 
 .hero .hero-content .hero-stats .stat-item p {
   font-size: 0.9rem;
   margin-bottom: 0;
-  color: var(--default-color);
+   color: #000;
+  text-align: center;
 }
 
 .hero .hero-image {
