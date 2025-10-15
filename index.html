@@ -53,6 +53,7 @@
           <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
           <li><a href="#servicios">Servicios</a></li>
           <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
           
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -201,8 +202,8 @@
       <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
         <div class="image-wrapper">
           <div class="images position-relative" data-aos="zoom-out" data-aos-delay="400">
-            <img src="assets/img/about/about-5.webp" alt="Business Meeting" class="img-fluid main-image rounded-4">
-            <img src="assets/img/about/about-square-1.webp" alt="Team Discussion"
+            <img src="assets/img/signo-trading.jpg" alt="Business Meeting" class="img-fluid main-image rounded-4">
+            <img src="assets/img/trading.jpg" alt="Team Discussion"
               class="img-fluid small-image rounded-4">
           </div>
         
@@ -455,8 +456,88 @@
 
     </section><!-- /Faq Section -->
 
-    
-    
+<!-- Carrusel de Testimonios -->
+<section id="testimonios" class="testimonios section py-5 bg-light">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title text-center ">
+      <h2>Testimonios</h2>
+      <p>Lo que dicen nuestros clientes</p>
+    </div>
+
+    <div id="testimoniosCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="testimonial p-4 text-center">
+                <h5>Juan Pérez</h5>
+                <small class="text-muted d-block mb-2">Argentina</small>
+                <p>“Excelente atención y resultados. Muy recomendable.”</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="testimonial p-4 text-center">
+                <h5>María González</h5>
+                <small class="text-muted d-block mb-2">Chile</small>
+                <p>“Un servicio profesional, rápido y de calidad.”</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="testimonial p-4 text-center">
+                <h5>Carlos López</h5>
+                <small class="text-muted d-block mb-2">México</small>
+                <p>“Muy conforme con el trato y el resultado final.”</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="testimonial p-4 text-center">
+                <h5>Ana Torres</h5>
+                <small class="text-muted d-block mb-2">Colombia</small>
+                <p>“Todo el proceso fue claro y eficiente.”</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="testimonial p-4 text-center">
+                <h5>Diego Fernández</h5>
+                <small class="text-muted d-block mb-2">España</small>
+                <p>“Atención personalizada y resultados impecables.”</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="testimonial p-4 text-center">
+                <h5>Lucía Martínez</h5>
+                <small class="text-muted d-block mb-2">Uruguay</small>
+                <p>“Superaron mis expectativas. Muy recomendados.”</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Flechas -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
 
   </main>
 
@@ -474,8 +555,7 @@
           <p>Threadneedle St, London EC2R 8AH, Reino Unido</p>
         </div>
         <div>
-<p class="mb-2 text-white"><strong>Teléfono:</strong> <span>+44 7457 409 685</span></p>
-
+<p class="mb-2 text-white"><strong>Teléfono:</strong> <span>+44 7418 602 068</span></p>
         </div>
       </div>
     </div>
@@ -524,7 +604,7 @@
       const amount = document.getElementById("amount").value.trim();
       const message = document.getElementById("message").value.trim();
 
-      const phone = "447457409685"; // 🔹 Reemplazá con tu número en formato internacional sin "+"
+      const phone = "447418602068"; // 🔹 Reemplazá con tu número en formato internacional sin "+"
 
       // 👇 Usamos %0A para saltos de línea que WhatsApp entiende
       const text =
@@ -538,6 +618,23 @@
       window.open(url, "_blank");
     });
   </script>
+
+
+<!-- Script para loop infinito -->
+<script>
+  const carousel = document.querySelector('#testimoniosCarousel');
+  carousel.addEventListener('slid.bs.carousel', function (e) {
+    // Reinicia automáticamente al llegar al final
+    const items = carousel.querySelectorAll('.carousel-item');
+    const activeIndex = Array.from(items).indexOf(carousel.querySelector('.carousel-item.active'));
+    if (activeIndex === items.length - 1) {
+      setTimeout(() => {
+        const bsCarousel = bootstrap.Carousel.getInstance(carousel);
+        bsCarousel.to(0);
+      }, 3000);
+    }
+  });
+</script>
 </body>
 
 </html>

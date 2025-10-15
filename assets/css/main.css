@@ -1038,6 +1038,8 @@ section,
 .about .about-description {
   margin-bottom: 2rem;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
+ text-align: justify;
+
 }
 
 .about .feature-list-wrapper {
@@ -4192,4 +4194,42 @@ section,
   height: 60px !important; /* Cambiá el tamaño a gusto */
   width: auto !important;
 }
+}
+
+.testimonios .testimonial {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.testimonios .testimonial:hover {
+  transform: translateY(-5px);
+}
+
+.testimonios h5 {
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.testimonios p {
+  font-style: italic;
+  color: #555;
+  margin: 0;
+}
+
+/* Centra las flechas verticalmente */
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(0.5);
+  width: 2rem;
+  height: 2rem;
 }
