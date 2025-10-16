@@ -97,44 +97,60 @@
           </div>
 
           <!-- Columna derecha (formulario en card) -->
-     <div class="col-lg-6">
-  <div class="card p-4 shadow-lg border-0" data-aos="zoom-out" data-aos-delay="300"
+     <div class="col-lg-6 ">
+  <div class="card p-4 shadow-lg border-0 bg-black" data-aos="zoom-out" data-aos-delay="300"
     style="border-radius: 16px;">
-    <h4 class="mb-3 text-center">Solicitá una consulta gratuita</h4>
+    <h4 class="mb-3 text-center" style="color: #a8895f;">Solicitá una consulta gratuita</h4>
 
     <form id="whatsappForm">
       <div class="row">
         <div class="col-md-6 mb-3">
-          <label for="name" class="form-label">Nombre completo</label>
-          <input type="text" class="form-control" id="name" placeholder="EJ: Juan Pérez" required style="
-            border: 1px solid #ccc;
+          <label for="name" class="form-label" style="color: #b8b8b8;">Nombre completo</label>
+          <input type="text" class="form-control bg-black" id="name" placeholder="EJ: Juan Pérez" required style="
             border-radius: 6px;
             padding: 10px;
+             color: white;
             transition: all 0.3s ease;
-          " onfocus="this.style.borderColor='#a8895f';"
-            onblur="this.style.borderColor='#ccc';">
+         " onfocus="this.style.borderColor='#a8895f'; this.style.boxShadow='none'"
+            onblur="this.style.borderColor='#a8895f'; this.style.boxShadow='none'">
+            <style>
+  #name::placeholder {
+    color: #b8b8b8;
+    opacity: 1;
+  }
+</style>
         </div>
 
         <div class="col-md-6 mb-3">
-          <label for="email" class="form-label">Correo electrónico</label>
-          <input type="email" class="form-control" id="email" placeholder="tu@email.com" required style="
+          <label for="email" class="form-label " style="color: #b8b8b8;">Correo electrónico</label>
+          <input type="email" class="form-control bg-black" id="email" placeholder="tu@email.com" required style="
             border: 1px solid #ccc;
             border-radius: 6px;
             padding: 10px;
+             color: white;
+
             transition: all 0.3s ease;
-          " onfocus="this.style.borderColor='#a8895f';"
-            onblur="this.style.borderColor='#ccc';" />
+  " onfocus="this.style.borderColor='#a8895f'; this.style.boxShadow='none'"
+            onblur="this.style.borderColor='#a8895f'; this.style.boxShadow='none'" />
+                        <style>
+  #email::placeholder {
+    color: #b8b8b8;
+    opacity: 1;
+  }
+</style>
         </div>
 
         <div class="col-md-6 mb-3">
-          <label for="country" class="form-label">País de residencia</label>
-          <select id="country" class="form-select" required style="
+          <label for="country" class="form-label" style="color: #b8b8b8;">País de residencia</label>
+          <select id="country" class="form-select bg-black" required style="
             border: 1px solid #ccc;
             border-radius: 6px;
             padding: 10px;
+             color: white;
+
             transition: all 0.3s ease;
-          " onfocus="this.style.borderColor='#a8895f';"
-            onblur="this.style.borderColor='#ccc';">
+            " onfocus="this.style.borderColor='#a8895f'; this.style.boxShadow='none'"
+            onblur="this.style.borderColor='#a8895f'; this.style.boxShadow='none'" >
             <option value="">Seleccioná tu país</option>
             <option value="Argentina">Argentina</option>
             <option value="Chile">Chile</option>
@@ -145,28 +161,43 @@
             <option value="Perú">Perú</option>
             <option value="Otro">Otro</option>
           </select>
+                                  <style>
+  #country::placeholder {
+    color: #b8b8b8;
+    opacity: 1;
+  }
+</style>
         </div>
 
         <div class="col-md-6 mb-3">
-          <label for="company" class="form-label">Empresa o plataforma involucrada</label>
-          <input type="text" class="form-control" id="company" placeholder="Ej: FTX, eToro, Binance..." required style="
+          <label for="company" class="form-label"  style="color: #b8b8b8;">Empresa o plataforma involucrada</label>
+          <input type="text" class="form-control  bg-black" id="company" placeholder="Ej: FTX, eToro, Binance..." required style="
             border: 1px solid #ccc;
             border-radius: 6px;
             padding: 10px;
+             color: white;
+            
             transition: all 0.3s ease;
-          " onfocus="this.style.borderColor='#a8895f';"
-            onblur="this.style.borderColor='#ccc';">
+                 " onfocus="this.style.borderColor='#a8895f'; this.style.boxShadow='none'"
+            onblur="this.style.borderColor='#a8895f'; this.style.boxShadow='none'">
+                                           <style>
+  #company::placeholder {
+    color: #b8b8b8;
+    opacity: 1;
+  }
+</style>
         </div>
 
         <div class="col-md-6 mb-3">
-          <label for="paymentMethod" class="form-label">Medio de pago</label>
-          <select id="paymentMethod" class="form-select" required style="
+          <label for="paymentMethod" class="form-label" style="color: #b8b8b8;">Medio de pago</label>
+          <select id="paymentMethod" class="form-select bg-black" required style="
             border: 1px solid #ccc;
             border-radius: 6px;
+             color: white;
             padding: 10px;
             transition: all 0.3s ease;
-          " onfocus="this.style.borderColor='#a8895f';"
-            onblur="this.style.borderColor='#ccc';">
+                " onfocus="this.style.borderColor='#a8895f'; this.style.boxShadow='none'"
+            onblur="this.style.borderColor='#a8895f'; this.style.boxShadow='none'">
             <option value="">Seleccioná un medio</option>
             <option value="Transferencia bancaria">Transferencia bancaria</option>
             <option value="Tarjeta de crédito/débito">Tarjeta de crédito/débito</option>
@@ -174,40 +205,137 @@
             <option value="PayPal">PayPal</option>
             <option value="Otro">Otro</option>
           </select>
+
+                                                    <style>
+  #paymentMethod::placeholder {
+    color: #b8b8b8;
+    opacity: 1;
+  }
+</style>
         </div>
 
-        <div class="col-md-6 mb-3">
-          <label for="investmentDate" class="form-label">Fecha aproximada de la inversión</label>
-          <input type="month" class="form-control" id="investmentDate" required style="
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            padding: 10px;
-            transition: all 0.3s ease;
-          " onfocus="this.style.borderColor='#a8895f';"
-            onblur="this.style.borderColor='#ccc';">
-        </div>
+      <div class="col-md-6 mb-3">
+  <label for="investmentDate" class="form-label" style="color: #b8b8b8;">
+    Fecha aproximada de la inversión
+  </label>
+  <input
+    type="month"
+    class="form-control bg-black"
+    id="investmentDate"
+    required
+    style="
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      color: white;               /* texto blanco */
+      background-color: black;    /* fondo negro */
+      padding: 10px;
+      transition: all 0.3s ease;
+      box-shadow: none;           /* sin sombra */
+    "
+    onfocus="this.style.borderColor='#a8895f'; this.style.boxShadow='none'"
+    onblur="this.style.borderColor='#a8895f'; this.style.boxShadow='none'"
+  >
+</div>
+
+<style>
+  /* Estilo adicional para asegurar que el ícono del selector también se vea bien */
+  input[type="month"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); /* vuelve blanco el ícono del calendario en fondo negro */
+  }
+</style>
+
 
         <div class="col-md-6 mb-3">
-          <label for="amount" class="form-label">Monto total invertido (USD)</label>
-          <input type="number" class="form-control" id="amount" placeholder="Ej: USD 7,500" required style="
+          <label for="amount" class="form-label" style="color: #b8b8b8;">Monto total invertido (USD)</label>
+          <input type="number" class="form-control bg-black" id="amount" placeholder="Ej: USD 7,500" required style="
             border: 1px solid #ccc;
             border-radius: 6px;
+      color: white;               /* texto blanco */
             padding: 10px;
             transition: all 0.3s ease;
-          " onfocus="this.style.borderColor='#a8895f';"
-            onblur="this.style.borderColor='#ccc';">
+        "  onfocus="this.style.borderColor='#a8895f'; this.style.boxShadow='none'"
+    onblur="this.style.borderColor='#a8895f'; this.style.boxShadow='none'">
+
+                                                     <style>
+  #amount::placeholder {
+    color: #b8b8b8;
+    opacity: 1;
+  }
+
+    /* Eliminar flechas del input number en Chrome, Edge, Safari */
+    #amount::-webkit-inner-spin-button,
+    #amount::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Eliminar flechas en Firefox */
+    #amount {
+      -moz-appearance: textfield;
+    }
+</style>
         </div>
 
-        <div class="col-md-6 mb-3">
-          <label for="message" class="form-label">Mensaje</label>
-          <textarea class="form-control" id="message" rows="3" placeholder="Contanos tu caso..." required style="
+
+<div class="col-md-6 mb-3">
+  <label for="phone" class="form-label" style="color: #b8b8b8;">Teléfono (opcional)</label>
+  <input
+    type="number"
+    class="form-control bg-black"
+    id="phone"
+    placeholder="+44 20 1234 5678"
+    style="
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      color: white;               /* texto en blanco */
+      background-color: black;    /* fondo negro */
+      padding: 10px;
+      transition: all 0.3s ease;
+      box-shadow: none;           /* sin sombra */
+    "
+    onfocus="this.style.borderColor='#a8895f'; this.style.boxShadow='none'"
+    onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'"
+  >
+
+  <style>
+    /* Placeholder blanco grisáceo */
+    #phone::placeholder {
+      color: #b8b8b8;
+      opacity: 1;
+    }
+
+    /* Eliminar flechas del input number en Chrome, Edge, Safari */
+    #phone::-webkit-inner-spin-button,
+    #phone::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Eliminar flechas en Firefox */
+    #phone {
+      -moz-appearance: textfield;
+    }
+  </style>
+</div>
+
+        <div class=" mb-3">
+          <label for="message" class="form-label" style="color: #b8b8b8;">Mensaje</label>
+          <textarea class="form-control bg-black" id="message" rows="3" placeholder="Explica brevemente qué sucedió..." required style="
             border: 1px solid #ccc;
             border-radius: 6px;
+      color: white;               /* texto en blanco */
             padding: 10px;
             transition: all 0.3s ease;
-          " onfocus="this.style.borderColor='#a8895f';"
-            onblur="this.style.borderColor='#ccc';"></textarea>
+          " onfocus="this.style.borderColor='#a8895f'; this.style.boxShadow='none'"
+            onblur="this.style.borderColor='#a8895f'; this.style.boxShadow='none'" ></textarea>
         </div>
+
+                                                            <style>
+  #message::placeholder {
+    color: #b8b8b8;
+    opacity: 1;
+  }
+</style>
       </div>
 
       <button type="submit"
@@ -292,7 +420,7 @@
 
 
     <!-- Services Section -->
-    <section id="servicios" class="services section">
+    <section id="servicios" class="services section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -399,7 +527,7 @@
 
 
     <!-- Services Section -->
-    <section class="services section">
+    <section class="services section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -471,7 +599,7 @@
 
 
     <!-- Faq Section -->
-    <section id="preguntas-frecuentes" class="faq section">
+    <section id="preguntas-frecuentes" class="faq section light-background">
 
       <div class="container">
 
@@ -535,7 +663,7 @@
     </section><!-- /Faq Section -->
 
     <!-- Carrusel de Testimonios -->
-    <section id="testimonios" class="testimonios section py-5 bg-light">
+    <section id="testimonios" class="testimonios section py-5 light-background">
       <div class="container" data-aos="fade-up">
         <div class="section-title text-center ">
           <h2>Testimonios</h2>
@@ -691,14 +819,18 @@
               <p>Threadneedle St, London EC2R 8AH, Reino Unido</p>
 
             </div>
+           
             <div>
-              <p class="mb-2 text-white"><strong>Teléfono:</strong> <span>+44 7418 602 068</span></p>
+        <p><strong>Teléfono:</strong> <span class="no-scale-phone">+44 7418 602 068</span></p>
+
+
             </div>
           </div>
         </div>
       </div>
     </div>
 
+<meta name="format-detection" content="telephone=no">
 
     <div class="container copyright text-center mt-4">
       <div class="credits">
@@ -712,9 +844,12 @@
 
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+<div>
+
+
+
+    <a href="https://wa.me/+5491161361408" class="whatsapp" target="_blank"> <i class="bi bi-whatsapp icon-whatsapp"></i></a>
+  </div>
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -744,25 +879,35 @@
     const investmentDate = document.getElementById("investmentDate").value.trim();
     const amount = document.getElementById("amount").value.trim();
     const message = document.getElementById("message").value.trim();
+    
+    // 🔹 Campo opcional
+    const phoneInput = document.getElementById("phone");
+    const phoneForm = phoneInput ? phoneInput.value.trim() : "";
 
-    const phone = "447418602068"; // 🔹 Reemplazá con tu número en formato internacional sin "+"
+    const phone = "447418602068"; // 🔹 Tu número en formato internacional sin "+"
 
     // 👇 Armamos el texto con saltos de línea (%0A)
-    const text =
+    let text =
       `👋 Hola, soy ${name}.%0A` +
       `📧 Correo: ${email}%0A` +
       `🌍 País de residencia: ${country}%0A` +
       `🏢 Empresa o plataforma: ${company}%0A` +
       `💳 Medio de pago: ${paymentMethod}%0A` +
       `📅 Fecha aproximada de inversión: ${investmentDate}%0A` +
-      `💰 Monto total invertido: USD ${amount}%0A` +
-      `💬 Mensaje: ${message}`;
+      `💰 Monto total invertido: USD ${amount}%0A`;
+
+    // 🔸 Solo agregar si el usuario ingresó teléfono
+    if (phoneForm) {
+      text += `📞 Teléfono: ${phoneForm}%0A`;
+    }
+
+    text += `💬 Mensaje: ${message}`;
 
     const url = `https://wa.me/${phone}?text=${text}`;
-
     window.open(url, "_blank");
   });
 </script>
+
 
 
 

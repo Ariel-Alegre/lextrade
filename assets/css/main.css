@@ -11,6 +11,7 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
+
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway",  sans-serif;
@@ -4235,4 +4236,48 @@ section,
   filter: invert(0.5);
   width: 2rem;
   height: 2rem;
+}
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 10px;
+  right: 10px; /* ✅ pegado abajo a la derecha */
+  background-color: #25d366;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+  text-decoration: none;
+  box-shadow: 0px 0px 10px #25d366;
+  transition: all 0.3s ease;
+}
+
+.whatsapp:hover {
+  box-shadow: 0px 0px 50px #25d366;
+}
+
+.icon-whatsapp {
+  color: white;
+  position: absolute;
+  margin-top: 6px;
+  margin-left: -14px;
+}
+
+/* 📱 Ajuste para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .whatsapp {
+    right: 10px; /* ✅ también pegado a la derecha en mobile */
+    bottom: 10px;
+  }
+}
+
+.no-scale-phone {
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif !important;
+  font-size: inherit !important;
+  -webkit-text-size-adjust: none !important;
+  text-size-adjust: none !important;
+  color: inherit !important;
+  font-weight: normal !important;
 }
