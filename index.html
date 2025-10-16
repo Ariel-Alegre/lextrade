@@ -97,62 +97,128 @@
           </div>
 
           <!-- Columna derecha (formulario en card) -->
-          <div class="col-lg-6">
-            <div class="card p-4 shadow-lg border-0" data-aos="zoom-out" data-aos-delay="300"
-              style="border-radius: 16px;">
-              <h4 class="mb-3 text-center">Solicitá una consulta gratuita</h4>
+     <div class="col-lg-6">
+  <div class="card p-4 shadow-lg border-0" data-aos="zoom-out" data-aos-delay="300"
+    style="border-radius: 16px;">
+    <h4 class="mb-3 text-center">Solicitá una consulta gratuita</h4>
 
-              <form id="whatsappForm">
-                <div class="mb-3">
-                  <label for="name" class="form-label">Nombre</label>
-                  <input type="text" class="form-control" id="name" placeholder="Tu nombre" required style="
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    padding: 10px;
-    transition: all 0.3s ease;
-  " onfocus="this.style.boxShadow='none'; this.style.borderColor='#a8895f';"
-                    onblur="this.style.boxShadow='none'; this.style.borderColor='#a8895f';">
-                </div>
+    <form id="whatsappForm">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="name" class="form-label">Nombre completo</label>
+          <input type="text" class="form-control" id="name" placeholder="EJ: Juan Pérez" required style="
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 10px;
+            transition: all 0.3s ease;
+          " onfocus="this.style.borderColor='#a8895f';"
+            onblur="this.style.borderColor='#ccc';">
+        </div>
 
-                <div class="mb-3">
-                  <label for="email" class="form-label">Correo electrónico</label>
-                  <input type="email" class="form-control" id="email" placeholder="tu@email.com" required style="
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    padding: 10px;
-    transition: all 0.3s ease;
-  " onfocus="this.style.boxShadow='none'; this.style.borderColor='#a8895f';"
-                    onblur="this.style.boxShadow='none'; this.style.borderColor='#a8895f';" />
-                </div>
+        <div class="col-md-6 mb-3">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" placeholder="tu@email.com" required style="
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 10px;
+            transition: all 0.3s ease;
+          " onfocus="this.style.borderColor='#a8895f';"
+            onblur="this.style.borderColor='#ccc';" />
+        </div>
 
-                <div class="mb-3">
-                  <label for="amount" class="form-label">Monto total invertido (USD)</label>
-                  <input type="number" class="form-control" id="amount" placeholder="Ej: 5000" required style="
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    padding: 10px;
-    transition: all 0.3s ease;
-  " onfocus="this.style.boxShadow='none'; this.style.borderColor='#a8895f';"
-                    onblur="this.style.boxShadow='none'; this.style.borderColor='#a8895f';">
-                </div>
+        <div class="col-md-6 mb-3">
+          <label for="country" class="form-label">País de residencia</label>
+          <select id="country" class="form-select" required style="
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 10px;
+            transition: all 0.3s ease;
+          " onfocus="this.style.borderColor='#a8895f';"
+            onblur="this.style.borderColor='#ccc';">
+            <option value="">Seleccioná tu país</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Chile">Chile</option>
+            <option value="México">México</option>
+            <option value="España">España</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="Perú">Perú</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </div>
 
-                <div class="mb-3">
-                  <label for="message" class="form-label">Mensaje</label>
-                  <textarea class="form-control" id="message" rows="3" placeholder="Contanos tu caso..." required style="
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    padding: 10px;
-    transition: all 0.3s ease;
-  " onfocus="this.style.boxShadow='none'; this.style.borderColor='#a8895f';"
-                    onblur="this.style.boxShadow='none'; this.style.borderColor='#a8895f';"></textarea>
-                </div>
+        <div class="col-md-6 mb-3">
+          <label for="company" class="form-label">Empresa o plataforma involucrada</label>
+          <input type="text" class="form-control" id="company" placeholder="Ej: FTX, eToro, Binance..." required style="
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 10px;
+            transition: all 0.3s ease;
+          " onfocus="this.style.borderColor='#a8895f';"
+            onblur="this.style.borderColor='#ccc';">
+        </div>
 
-                <button type="submit"
-                  style="background-color: #a8895f; border: none; color: #fff; font-weight: 600; width: 100%; padding: 10px;">Enviar
-                  por WhatsApp</button>
-              </form>
-            </div>
-          </div>
+        <div class="col-md-6 mb-3">
+          <label for="paymentMethod" class="form-label">Medio de pago</label>
+          <select id="paymentMethod" class="form-select" required style="
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 10px;
+            transition: all 0.3s ease;
+          " onfocus="this.style.borderColor='#a8895f';"
+            onblur="this.style.borderColor='#ccc';">
+            <option value="">Seleccioná un medio</option>
+            <option value="Transferencia bancaria">Transferencia bancaria</option>
+            <option value="Tarjeta de crédito/débito">Tarjeta de crédito/débito</option>
+            <option value="Criptomonedas">Criptomonedas</option>
+            <option value="PayPal">PayPal</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label for="investmentDate" class="form-label">Fecha aproximada de la inversión</label>
+          <input type="month" class="form-control" id="investmentDate" required style="
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 10px;
+            transition: all 0.3s ease;
+          " onfocus="this.style.borderColor='#a8895f';"
+            onblur="this.style.borderColor='#ccc';">
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label for="amount" class="form-label">Monto total invertido (USD)</label>
+          <input type="number" class="form-control" id="amount" placeholder="Ej: USD 7,500" required style="
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 10px;
+            transition: all 0.3s ease;
+          " onfocus="this.style.borderColor='#a8895f';"
+            onblur="this.style.borderColor='#ccc';">
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label for="message" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Contanos tu caso..." required style="
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 10px;
+            transition: all 0.3s ease;
+          " onfocus="this.style.borderColor='#a8895f';"
+            onblur="this.style.borderColor='#ccc';"></textarea>
+        </div>
+      </div>
+
+      <button type="submit"
+        style="background-color: #a8895f; border: none; color: #fff; font-weight: 600; width: 100%; padding: 10px;">
+        Enviar por WhatsApp
+      </button>
+    </form>
+  </div>
+</div>
+
+
         </div>
       </div>
     </section>
@@ -623,7 +689,6 @@
           <div class="footer-contact d-flex justify-content-center flex-wrap gap-4">
             <div>
               <p>Threadneedle St, London EC2R 8AH, Reino Unido</p>
-              <p>Threadneedle St, London EC2R 8AH, Reino Unido</p>
 
             </div>
             <div>
@@ -668,28 +733,37 @@
   <script src="assets/js/main.js"></script>
   <!-- Script de WhatsApp -->
   <script>
-    document.getElementById("whatsappForm").addEventListener("submit", function (e) {
-      e.preventDefault();
+  document.getElementById("whatsappForm").addEventListener("submit", function (e) {
+    e.preventDefault();
 
-      const name = document.getElementById("name").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const amount = document.getElementById("amount").value.trim();
-      const message = document.getElementById("message").value.trim();
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const country = document.getElementById("country").value.trim();
+    const company = document.getElementById("company").value.trim();
+    const paymentMethod = document.getElementById("paymentMethod").value.trim();
+    const investmentDate = document.getElementById("investmentDate").value.trim();
+    const amount = document.getElementById("amount").value.trim();
+    const message = document.getElementById("message").value.trim();
 
-      const phone = "447418602068"; // 🔹 Reemplazá con tu número en formato internacional sin "+"
+    const phone = "447418602068"; // 🔹 Reemplazá con tu número en formato internacional sin "+"
 
-      // 👇 Usamos %0A para saltos de línea que WhatsApp entiende
-      const text =
-        `👋 Hola, soy ${name}.%0A` +
-        `📧 Mi correo es: ${email}%0A` +
-        `💰 Monto total invertido: USD ${amount}%0A` +
-        `💬 Mensaje: ${message}`;
+    // 👇 Armamos el texto con saltos de línea (%0A)
+    const text =
+      `👋 Hola, soy ${name}.%0A` +
+      `📧 Correo: ${email}%0A` +
+      `🌍 País de residencia: ${country}%0A` +
+      `🏢 Empresa o plataforma: ${company}%0A` +
+      `💳 Medio de pago: ${paymentMethod}%0A` +
+      `📅 Fecha aproximada de inversión: ${investmentDate}%0A` +
+      `💰 Monto total invertido: USD ${amount}%0A` +
+      `💬 Mensaje: ${message}`;
 
-      const url = `https://wa.me/${phone}?text=${text}`;
+    const url = `https://wa.me/${phone}?text=${text}`;
 
-      window.open(url, "_blank");
-    });
-  </script>
+    window.open(url, "_blank");
+  });
+</script>
+
 
 
   <!-- Script para loop infinito -->
